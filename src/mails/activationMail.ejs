@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بريد التفعيل ليركو</title>
+    <meta  http-equiv="Content-Type" content="text/html; charset=UTF-8"  />
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0"  />
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+            min-width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            background-color: #fafafa;
+            color: #222222;
+        }
+        a{
+            color: #000;
+            text-decoration: none;
+        }
+        h1{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.25;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        p{
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+        table td{
+            vertical-align: top;
+        }
+        .email-wrapper{
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .email-header{
+            background-color: #0070f3;
+            padding: 24px;
+            color: #ffffff;
+        }
+        .email-body{
+            padding: 24px;
+            background-color: #ffffff;
+        }
+        .email-footer{
+            background-color: #f6f6f6;
+            padding: 24px;
+        }
+        .button{
+            display: inline-block;
+            background-color: #0070f3;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+        }
+    </style>
+    </head>
+        <body>
+            <div class="email-wrapper">
+                <div class="email-header">
+                    <h1>مرحبا بكم في ليركو</h1>
+                </div>
+                <div class="email-body">
+                    <p>مرحبا <%= user.name %>,</p>
+                    <p>شكرا لك على التسجيل في ليركو. لتفعيل حسابك برجاء استخدام رمز التفعيل التالي: </p>
+                    <h2><%= activationCode %></h2>
+                    <p>الرجاء إدخال هذا الرمز في صفحة التنشيط خلال الدقائق الخمس القادمة.</p>
+                    <p>إذا لم تقم بالتسجيل للحصول على حساب ليركو، يرجى تجاهل هذا البريد الإلكتروني.</p>
+                </div>
+                <div class="email-footer">
+                    <p>إذا كان لديك أي أسئلة، فلا تتردد في الاتصال بنا على <a href="crm:support@lerko.com">support@lerko.com</a></p>
+                    <p>&copy;2024 ليركو. كل الحقوق محفوظة. مشغل بواسطة <a style="border-bottom: 1px solid #23bd70" href="https://my-portfolio0tr.vercel.app">محمود محمد</a></p>
+                </div>
+            </div>
+        </body>
+</html>
